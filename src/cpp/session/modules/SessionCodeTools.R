@@ -2053,3 +2053,8 @@
    readLines(datalist, warn = FALSE)
    
 })
+
+.rs.addFunction("tryCatch", function(expr)
+{
+   tryCatch(expr, condition = identity)
+})
