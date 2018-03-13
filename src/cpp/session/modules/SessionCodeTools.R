@@ -2058,3 +2058,8 @@
 {
    tryCatch(expr, condition = identity)
 })
+
+.rs.addFunction("resolveAliasedPath", function(path)
+{
+   .Call("rs_resolveAliasedPath", path, PACKAGE = "(embedding)")
+})
